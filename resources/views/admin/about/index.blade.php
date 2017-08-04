@@ -7,6 +7,7 @@
             @include('layouts.errors')
             {!! Form::open(['route' => ['about.update', $about->id], 'method' => 'PUT'], ['class' => 'form-signin']) !!}
                 <div class="form-group"> 
+                    <h1>test</h1>
                      {{ Form::label('preview', 'Preview') }}
                      {{ Form::textarea('preview', $about->preview, ['size' => '152x4'], ['class' => 'form-control'])}}
                 </div>
