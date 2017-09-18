@@ -32,3 +32,8 @@ Route::post('/users/store', 'UserController@store')->name('users.store');
 Route::delete('/users/delete/{id}', 'UserController@destroy')->name('users.delete');
 
 Route::resource('posts', 'PostsController');
+
+Route::get('/contact', 'ContactController@index')->name('contact');
+Route::post('/contact', 'ContactController@send')->name('contact.send');
+
+Route::get('/sendmail', 'SendMailController@sendMail');

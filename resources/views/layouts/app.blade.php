@@ -45,6 +45,7 @@
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="{{ route('contact') }}">Contact</a></li>
                         @else
                             <li>
                                 <a href="{{ URL::to('users/show/'. Auth::user()->id) }}" class="dropdown-toggle">Wellcome {{ Auth::user()->fullname }}</a>
